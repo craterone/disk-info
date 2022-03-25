@@ -1,0 +1,25 @@
+{
+  "name": "disk-tool",
+  "version": "0.0.1",
+  "description": "Disk Tool",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "configure-debug": "cmake-js configure",
+    "configure": "cmake-js configure -D",
+    "compile-debug": "cmake-js configure -D && cmake-js compile -D",
+    "compile": "cmake-js configure && cmake-js compile",
+    "postinstall": "npm run compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:craterone/disk-tool.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cmake-js": "^6.3.0",
+    "node-addon-api": "^4.3.0"
+  }
+}
