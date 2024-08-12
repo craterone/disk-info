@@ -1,6 +1,6 @@
 const disk = require('..');
 
-const result = disk.info('/Users/congchen/workspace/self/disk-info');
+const result = disk.info('/root');
 
 console.log(result);
 
